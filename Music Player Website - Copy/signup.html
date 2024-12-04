@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Melodix Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <style>
+        html,body{
+    height: 100vh;
+    width: 100%;
+    background-image: url("img/login-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#containerDiv #loginDiv{
+    height: 440px;
+}
+    </style>
+</head>
+<body>
+   <form method="post">
+    <div id="containerDiv">
+        <div id="loginDiv">
+
+              <h1>Sign Up</h1>
+
+              <div id="inputDiv">
+                    <input type="text" name="user_name" required placeholder="Enter your name" >
+                    <input type="email" name="user_email"  required placeholder="Enter your email" >
+                    <input type="password" name="user_password" required placeholder="Password" >
+                    <input type="password" name="user_confirm_password" required placeholder="Confirm Password" >
+              </div>
+
+              <div id="rememberForgetDiv">         
+                    <div id="remember">
+                        <div class="checkbox-container">
+                            <input id="checkbox" class="checkbox" type="checkbox" />
+                            <label for="checkbox">
+                                <i class="bi bi-check-lg"></i>
+                            </label>
+                          </div>
+                         <label for="remember">Remember Me</label>
+                    </div>
+
+              </div>
+
+              <input class="submit-btn" type="submit" value="Sign Up"></input>
+
+              <div id="noAccount">
+                 <p>Already have an account? <a href="index.html">Login</a> </p>
+              </div>
+
+        </div>
+              <!-- <h3>Incorrect Password</h3> -->
+             
+    </div>
+</form>
+</body>
+</html>
